@@ -1,1 +1,8 @@
-@import '../../node_modules/bootstrap/scss/bootstrap.scss'
+// Bootstrap
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+// Common Styles
+@import './common/common.scss';
+
+// ItemsLayout Styles
+@import './pages/items/ItemsLayout.scss';

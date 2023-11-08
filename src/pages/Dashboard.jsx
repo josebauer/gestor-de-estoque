@@ -1,7 +1,11 @@
+import { Container } from "react-bootstrap";
+
 export default function Dashboard() {
   return (
     <main>
-      <h1>Dashboard</h1>
+      <Container>
+        <h1>Dashboard</h1>
+      </Container>
     </main>
   )
 }
