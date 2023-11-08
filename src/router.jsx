@@ -5,6 +5,7 @@ import ListItems from "./pages/items/ListItems";
 import ShowItem from "./pages/items/ShowItem";
 import UpdateItem from "./pages/items/UpdateItem";
 import ItemsLayout from "./pages/items/ItemsLayout";
+import CreateItem from "./pages/items/CreateItem";
 
 const router = createBrowserRouter([{
   path: '/',
