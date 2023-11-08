@@ -1,5 +1,5 @@
 import { Container, Nav } from "react-bootstrap";
-import { Outlet, useLocation } from "react-router-dom";
+import { Link, Outlet, useLocation } from "react-router-dom";
 
 export default function ItemsLayout() {
   const { pathname } = useLocation()
@@ -11,18 +11,21 @@ export default function ItemsLayout() {
         <Nav
           variant="tabs"
           className="mb-5"
+          defaultActiveKey="/items"
         >
           <Nav.Item>
             <Nav.Link 
               className={`navLink ${pathname === "/items" ? "active" : ""}`} 
-              href="/items"
+              as={Link} 
+              to="/items"
             >Todos os Itens
             </Nav.Link>
           </Nav.Item>
           <Nav.Item> 
             <Nav.Link 
               className={`navLink ${pathname === "/items/new" ? "active" : ""}`} 
-              href="/items/new"
+              as={Link} 
+              to="/items/new"
             >Novo Item
             </Nav.Link>
           </Nav.Item>
