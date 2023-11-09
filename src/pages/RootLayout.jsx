@@ -7,19 +7,19 @@ export default function RootLayout() {
   return (
     <>
       <header>
-        <Navbar data-bs-theme="dark" className="navbar p-3">
+        <Navbar data-bs-theme="dark" bg="dark" className="p-3">
           <Container>
             <Navbar.Brand as={Link} to="/">Gestor de Estoque</Navbar.Brand>
             <Nav className="me-auto" defaultActiveKey="/">
-              <Nav.Link 
-                as={Link} 
-                to="/" 
+              <Nav.Link
+                as={Link}
+                to="/"
                 className={`${pathname === "/" ? "active" : ""}`}
               >Início
               </Nav.Link>
-              <Nav.Link 
-                as={Link} 
-                to="/items" 
+              <Nav.Link
+                as={Link}
+                to="/items"
                 className={`${pathname === "/items" || pathname === "/items/new" ? "active" : ""}`}
               >Itens
               </Nav.Link>
@@ -30,7 +30,7 @@ export default function RootLayout() {
       <div>
         <Outlet />
       </div>
-      <footer className="footer text-center py-3">
+      <footer className="text-center py-3 bg-dark fixed-bottom">
         Desenvolvido por José Henrique Bauer
       </footer>
     </>
