@@ -15,7 +15,7 @@ export default function ItemsLayout() {
         >
           <Nav.Item>
             <Nav.Link 
-              className={`navLink ${pathname === "/items" ? "active" : ""}`} 
+              className={`${pathname === "/items" ? "active" : ""}`} 
               as={Link} 
               to="/items"
             >Todos os Itens
@@ -23,7 +23,7 @@ export default function ItemsLayout() {
           </Nav.Item>
           <Nav.Item> 
             <Nav.Link 
-              className={`navLink ${pathname === "/items/new" ? "active" : ""}`} 
+              className={`${pathname === "/items/new" ? "active" : ""}`} 
               as={Link} 
               to="/items/new"
             >Novo Item
