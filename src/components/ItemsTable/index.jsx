@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import useStock from "../../hooks/useStock";
 import { Table } from "react-bootstrap";
 import styles from "./styles.module.scss"
+import DeleteButton from "../DeleteButton";
 
 export default function ItemsTable() {
   const { items } = useStock()
@@ -28,9 +29,10 @@ export default function ItemsTable() {
               <Link to={`items/${item.id}`} className="btn btn-primary">
                 Ver
               </Link>
-              <Link to={`items/${item.id}/update`} className="ms-2 btn btn-light">
+              <Link to={`items/${item.id}/update`} className="mx-2 btn btn-light">
                 Atualizar
               </Link>
+              <DeleteButton itemId={item.id} itemName={item.name}/>
             </td>
           </tr>
         ))}
