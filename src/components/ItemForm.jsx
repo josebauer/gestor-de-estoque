@@ -54,6 +54,7 @@ export default function ItemForm({ itemToUpdate }) {
               value={item.name}
               onChange={handleChange}
               className="bg-dark text-white"
+              autocomplete="off"
             />
           </Form.Group>
         </Col>

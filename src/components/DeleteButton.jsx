@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Modal } from "react-bootstrap"
 import useStock from "../hooks/useStock";
+import { useNavigate } from "react-router-dom";
 
 export default function DeleteButton({ itemId, itemName }) {
   const [show, setShow] = useState(false);
@@ -9,13 +10,16 @@ export default function DeleteButton({ itemId, itemName }) {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  const navigate = useNavigate()
+
   const handleDelete = () => {
     setShow(false)
     deleteItem(itemId)
+    navigate('/items')
   }
 
   return (
-    <>
+    <>  
       <Button variant="danger" onClick={handleShow}>
         Excluir
       </Button>
