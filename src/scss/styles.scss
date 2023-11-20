@@ -1,5 +1,12 @@
-// Bootstrap
+// Alteração Variáveis Bootstrap
+$dark: #161616;
+
+$link-color: #fff;
+
+// Import bootstrap
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+
+
 
 // Common Styles
 @import './common/common.scss';
