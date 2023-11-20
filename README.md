@@ -1,6 +1,6 @@
 <h1 align="center">Gestor de Estoque</h1>
 
-<p align="center">Um programa web gerenciador de estoque, no qual  é possível adicionar novos itens ao estoque adicionando sua quantidade, valor, categoria e descrição. Além da opção de ver, atualizar e excluir cada item.</p>
+<p align="center">Um programa web gerenciador de estoque, no qual  é possível adicionar novos itens ao estoque, inserindo sua quantidade, valor, categoria e descrição. Além da opção de ver, atualizar e excluir cada item.</p>
 
 ## 🚀 Objetivos
 
@@ -9,9 +9,11 @@ Praticar e aprimorar habilidades de desenvolvimento web com React.
 ## 💻 Tecnologias Utilizadas
 
 - React
+- JavaScript
 - Bootstrap / react-bootstrap
 - Sass (scss)
-- JavaScript
+- HTML
+
   
 ## ⚙️ Features
 
