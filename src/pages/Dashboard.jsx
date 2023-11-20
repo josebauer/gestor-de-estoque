@@ -6,7 +6,7 @@ export default function Dashboard() {
   const { items } = useStock()
 
   const quantityItems = items.length
-  const inventoryTotal = items.reduce((sum, item) => +sum + item.quantity, 0)
+  const inventoryTotal = items.reduce((sum, item) => +sum + +item.quantity, 0)
 
   const today = new Date()
   const limitDate = new Date()
