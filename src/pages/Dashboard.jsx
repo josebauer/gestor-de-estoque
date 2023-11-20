@@ -42,7 +42,7 @@ export default function Dashboard() {
               <p className="h1 pt-3">{recentTotal}</p>
             </div>
           </div>
-          <div className="row gap-3 pt-5 px-2">
+          <div className="row gap-3 align-items-start pt-5 px-2">
             <Table striped bordered hover variant="dark" className="col-md">
               <thead>
                 <tr>
@@ -56,7 +56,7 @@ export default function Dashboard() {
                     <td>{item.name}</td>
                     <td>
                       <Link to={`/items/${item.id}`} className="btn btn-outline-light">
-                        Ver
+                        Visualizar
                       </Link>
                     </td>
                   </tr>
@@ -67,17 +67,19 @@ export default function Dashboard() {
             <Table striped bordered hover variant="dark" className="col">
               <thead>
                 <tr>
-                  <th>Itens Recentes</th>
+                  <th>Itens Acabando</th>
+                  <th>Qtd.</th>
                   <th>Ações</th>
                 </tr>
               </thead>
               <tbody className="tableBody">
-                {recentItems.map((item) => (
+                {lowQuantityItems.map((item) => (
                   <tr key={item.id}>
                     <td>{item.name}</td>
+                    <td>{item.quantity}</td>
                     <td>
                       <Link to={`/items/${item.id}`} className="btn btn-outline-light">
-                        Ver
+                        Visualizar
                       </Link>
                     </td>
                   </tr>

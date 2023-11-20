@@ -30,7 +30,7 @@ export default function RootLayout() {
       <div>
         <Outlet />
       </div>
-      <footer className="text-center py-3 bg-dark fixed-bottom">
+      <footer className="text-center py-3 bg-dark">
         Desenvolvido por José Henrique Bauer
       </footer>
     </>
