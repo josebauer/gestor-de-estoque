@@ -7,7 +7,7 @@ export default function RootLayout() {
   return (
     <>
       <header>
-        <Navbar data-bs-theme="dark" bg="dark" className="p-3">
+        <Navbar data-bs-theme="dark" bg="dark" className="py-3">
           <Container>
             <Navbar.Brand as={Link} to="/">Gestor de Estoque</Navbar.Brand>
             <Nav className="me-auto" defaultActiveKey="/">

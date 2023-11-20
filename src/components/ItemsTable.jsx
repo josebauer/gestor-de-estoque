@@ -1,8 +1,7 @@
 import { Link } from "react-router-dom";
-import useStock from "../../hooks/useStock";
+import useStock from "../hooks/useStock";
 import { Table } from "react-bootstrap";
-import styles from "./styles.module.scss"
-import DeleteButton from "../DeleteButton";
+import DeleteButton from "./DeleteButton";
 
 export default function ItemsTable() {
   const { items } = useStock()
@@ -18,7 +17,7 @@ export default function ItemsTable() {
           <th>Ações</th>
         </tr>
       </thead>
-      <tbody className={styles.tableBody}>
+      <tbody className="tableBody">
         {items.map((item) => (
           <tr key={item.id}>
             <td>{item.id}</td>
