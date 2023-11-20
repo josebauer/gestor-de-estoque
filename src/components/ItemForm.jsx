@@ -45,7 +45,7 @@ export default function ItemForm({ itemToUpdate }) {
     } finally {
       inputRef.current.focus()
     }
-  } 
+  }
 
   return (
     <Form onSubmit={handleSubmit}>
@@ -139,9 +139,9 @@ export default function ItemForm({ itemToUpdate }) {
           ></Form.Control>
         </Form.Group>
       </Row>
-        <Button className="my-3" type="submit">
-          Salvar
-        </Button>
+      <Button className="my-3" type="submit">
+        Salvar
+      </Button>
     </Form>
   )
 }
