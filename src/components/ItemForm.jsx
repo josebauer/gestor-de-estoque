@@ -98,7 +98,7 @@ export default function ItemForm({ itemToUpdate }) {
             />
           </Form.Group>
         </Col>
-        <Col>
+        <Col md>
           <Form.Group>
             <Form.Label htmlFor="category">Categoria</Form.Label>
             <Form.Select
@@ -139,9 +139,11 @@ export default function ItemForm({ itemToUpdate }) {
           ></Form.Control>
         </Form.Group>
       </Row>
-      <Button className="my-3" type="submit">
-        Salvar
-      </Button>
+      <div className="text-center text-md-start">
+        <Button className="my-3" type="submit">
+          Salvar
+        </Button>
+      </div>
     </Form>
   )
 }
