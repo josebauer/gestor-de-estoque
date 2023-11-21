@@ -34,6 +34,7 @@ Praticar e aprimorar habilidades de desenvolvimento web com React.
 ### 📍 Outros
   - SPA usando rotas com a lib <a href="https://www.npmjs.com/package/react-router-dom">React Router DOM</a>
   - Salvamento dos dados (itens) no navegador do usuário
+  - Responsividade
 
 ## 🌐 Demonstração
 Acesse o resultado final do projeto <a href="https://gestor-de-estoque-theta.vercel.app">clicando aqui</a>.
