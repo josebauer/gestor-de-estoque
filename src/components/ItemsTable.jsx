@@ -7,7 +7,7 @@ export default function ItemsTable() {
   const { items } = useStock()
 
   return (
-    <Table striped bordered hover variant="dark">
+    <Table striped bordered hover variant="dark" responsive>
       <thead>
         <tr>
           <th>ID</th>
@@ -24,11 +24,11 @@ export default function ItemsTable() {
             <td>{item.name}</td>
             <td>{item.quantity} unid.</td>
             <td>{item.category}</td>
-            <td>
+            <td className="d-flex gap-2">
               <Link to={`/items/${item.id}`} className="btn btn-primary">
                 Ver
               </Link>
-              <Link to={`/items/${item.id}/update`} className="mx-2 btn btn-light">
+              <Link to={`/items/${item.id}/update`} className="btn btn-light">
                 Atualizar
               </Link>
               <DeleteButton itemId={item.id} itemName={item.name}/>
